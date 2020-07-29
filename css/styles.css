@@ -39,6 +39,8 @@ ul{
   --instagram-secondary: #C7478F;
   --github-primary: #8a2be2;
   --github-secondary: #953ee5;
+  --troylabs-primary: #EE3A20;
+  --troylabs-secondary: #F04C34;
   --spotify-primary: #1DB954;
   --spotify-secondary: #32BF64;
 }
@@ -83,6 +85,9 @@ ul li:nth-child(4):before{
   background: var(--github-primary);
 }
 ul li:nth-child(5):before{
+  background: var(--troylabs-primary);
+}
+ul li:nth-child(6):before{
   background: var(--spotify-primary);
 }
 ul li:hover:before{
@@ -103,6 +108,9 @@ ul li:nth-child(4):hover:before{
   box-shadow: 0 0 15px var(--github-primary);
 }
 ul li:nth-child(5):hover:before{
+  box-shadow: 0 0 15px var(--troylabs-primary);
+}
+ul li:nth-child(6):hover:before{
   box-shadow: 0 0 15px var(--spotify-primary);
 }
 ul li:nth-child(1):hover{
@@ -126,6 +134,11 @@ ul li:nth-child(4):hover{
   text-shadow: 0 0 15px var(--github-primary);
 }
 ul li:nth-child(5):hover{
+  color: var(--spotify-secondary);
+  box-shadow: 0 0 15px var(--troylabs-primary);
+  text-shadow: 0 0 15px var(--troylabs-primary);
+}
+ul li:nth-child(6):hover{
   color: var(--spotify-secondary);
   box-shadow: 0 0 15px var(--spotify-primary);
   text-shadow: 0 0 15px var(--spotify-primary);
