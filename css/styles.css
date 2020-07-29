@@ -72,6 +72,7 @@ ul li:before{
   z-index: -1;
   transition: .5s;
 }
+
 ul li:nth-child(1):before{
   background: var(--email-primary);
 }
@@ -134,7 +135,7 @@ ul li:nth-child(4):hover{
   text-shadow: 0 0 15px var(--github-primary);
 }
 ul li:nth-child(5):hover{
-  color: var(--spotify-secondary);
+  color: var(--troylabs-secondary);
   box-shadow: 0 0 15px var(--troylabs-primary);
   text-shadow: 0 0 15px var(--troylabs-primary);
 }
@@ -142,4 +143,23 @@ ul li:nth-child(6):hover{
   color: var(--spotify-secondary);
   box-shadow: 0 0 15px var(--spotify-primary);
   text-shadow: 0 0 15px var(--spotify-primary);
+}
+
+.fa-envelope-o:hover{
+  color: var(--email-primary);
+}
+.fa-linkedin:hover{
+  color: var(--linkedin-primary);
+}
+.fa-instagram:hover{
+  color: var(--instagram-primary);
+}
+.fa-github:hover{
+  color: var(--github-primary);
+}
+.fa-rocket:hover{
+  color: var(--troylabs-primary);
+}
+.fa-spotify:hover{
+  color: var(--spotify-primary);
 }
