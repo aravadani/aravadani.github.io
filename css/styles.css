@@ -58,6 +58,9 @@ ul li{
   margin: 0 15px;
   cursor: pointer;
   transition: .5s;
+
+  background: #000;
+  box-shadow: 0 0 15px #000;
 }
 ul li:before{
   position: absolute;
@@ -71,25 +74,27 @@ ul li:before{
   transform: scale(.9);
   z-index: -1;
   transition: .5s;
+  box-shadow: 0 0 10px #000;
+  text-shadow: 0 0 10px #000;
 }
 
 ul li:nth-child(1):before{
-  background: var(--email-primary);
+
 }
 ul li:nth-child(2):before{
-  background: var(--linkedin-primary);
+
 }
 ul li:nth-child(3):before{
-  background: var(--instagram-primary);
+
 }
 ul li:nth-child(4):before{
-  background: var(--github-primary);
+
 }
 ul li:nth-child(5):before{
-  background: var(--troylabs-primary);
+
 }
 ul li:nth-child(6):before{
-  background: var(--spotify-primary);
+
 }
 ul li:hover:before{
   filter: blur(3px);
@@ -97,21 +102,27 @@ ul li:hover:before{
   /* box-shadow: 0 0 15px #d35400; */
 }
 ul li:nth-child(1):hover:before{
+  background: var(--email-primary);
   box-shadow: 0 0 15px var(--email-primary);
 }
 ul li:nth-child(2):hover:before{
+  background: var(--linkedin-primary);
   box-shadow: 0 0 15px var(--linkedin-primary);
 }
 ul li:nth-child(3):hover:before{
+  background: var(--instagram-primary);
   box-shadow: 0 0 15px var(--instagram-primary);
 }
 ul li:nth-child(4):hover:before{
+  background: var(--github-primary);
   box-shadow: 0 0 15px var(--github-primary);
 }
 ul li:nth-child(5):hover:before{
+  background: var(--troylabs-primary);
   box-shadow: 0 0 15px var(--troylabs-primary);
 }
 ul li:nth-child(6):hover:before{
+  background: var(--spotify-primary);
   box-shadow: 0 0 15px var(--spotify-primary);
 }
 ul li:nth-child(1):hover{

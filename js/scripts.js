@@ -1,4 +1,4 @@
-let IMG = document.querySelector("img");
+/* let IMG = document.querySelector("img");
 var check = true;
 function flip() {
   if(check)
@@ -12,5 +12,5 @@ function flip() {
   }
 }
  window.setInterval(flip, 700);
-
+*/
 //onmouseover="this.src='images/Wink.png';" onmouseout="this.src='images/Smile.png';"
