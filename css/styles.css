@@ -9,28 +9,11 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: #F0F0F0;
+  background: #000000;
 }
 
-img {
-  height: 200px;
-  width: 200px;
-}
-
-h1 {
-  font-family: didot;
-  font-size: 80px;
-  color: #171515;
-}
-
-a {
-  text-decoration: none;
-  color: #F0F0F0;
-}
-
-ul{
+.icons{
   display: flex;
-
   --email-primary: #ffd200;
   --email-secondary: #ffd617;
   --linkedin-primary: #2867B2;
@@ -45,132 +28,120 @@ ul{
   --spotify-secondary: #32BF64;
 }
 
-ul li{
-  position: relative;
+.icons a{
+  text-decoration: none;
+  position: absolute;
   display: block;
-  color: #F0F0F0;
+  color: #bbb;
   font-size: 30px;
   height: 60px;
   width: 60px;
-  background: #171515;
+  background: #ffffff;
   line-height: 60px;
   border-radius: 50%;
   margin: 0 15px;
   cursor: pointer;
-  transition: .5s;
 
-  background: #000;
-  box-shadow: 0 0 15px #000;
+  transform: translate(-235%,-220%);
+  box-shadow: 0 0 10px #fff;
+  text-shadow: 0 0 10px #fff;
 }
-ul li:before{
+.icons a::before{
   position: absolute;
   content: '';
   top: 0;
   left: 0;
   height: inherit;
   width: inherit;
-  /* background: #d35400; */
+  /*background: #d35400;*/
   border-radius: 50%;
   transform: scale(.9);
-  z-index: -1;
+  z-index: -10;
   transition: .5s;
-  box-shadow: 0 0 10px #000;
-  text-shadow: 0 0 10px #000;
-}
 
-ul li:nth-child(1):before{
-
+  background: #fff;
+  box-shadow: 0 0 15px #fff;
 }
-ul li:nth-child(2):before{
-
-}
-ul li:nth-child(3):before{
-
-}
-ul li:nth-child(4):before{
-
-}
-ul li:nth-child(5):before{
-
-}
-ul li:nth-child(6):before{
-
-}
-ul li:hover:before{
+.icons a:hover::before{
   filter: blur(3px);
   transform: scale(1.2);
   /* box-shadow: 0 0 15px #d35400; */
 }
-ul li:nth-child(1):hover:before{
+.icons .mail:hover::before{
   background: var(--email-primary);
   box-shadow: 0 0 15px var(--email-primary);
 }
-ul li:nth-child(2):hover:before{
+.icons .linkedin:hover::before{
   background: var(--linkedin-primary);
   box-shadow: 0 0 15px var(--linkedin-primary);
 }
-ul li:nth-child(3):hover:before{
+.icons .instagram:hover::before{
   background: var(--instagram-primary);
   box-shadow: 0 0 15px var(--instagram-primary);
 }
-ul li:nth-child(4):hover:before{
+.icons .github:hover::before{
   background: var(--github-primary);
   box-shadow: 0 0 15px var(--github-primary);
 }
-ul li:nth-child(5):hover:before{
+.icons .troylabs:hover::before{
   background: var(--troylabs-primary);
   box-shadow: 0 0 15px var(--troylabs-primary);
 }
-ul li:nth-child(6):hover:before{
-  background: var(--spotify-primary);
+.icons .spotify:hover::before{
   box-shadow: 0 0 15px var(--spotify-primary);
+  background: var(--spotify-primary);
 }
-ul li:nth-child(1):hover{
+.icons .mail:hover{
   color: var(--email-secondary);
   box-shadow: 0 0 15px var(--email-primary);
   text-shadow: 0 0 15px var(--email-primary);
 }
-ul li:nth-child(2):hover{
+.icons .linkedin:hover{
   color: var(--linkedin-secondary);
   box-shadow: 0 0 15px var(--linkedin-primary);
   text-shadow: 0 0 15px var(--linkedin-primary);
 }
-ul li:nth-child(3):hover{
+.icons .instagram:hover{
   color: var(--instagram-secondary);
   box-shadow: 0 0 15px var(--instagram-primary);
   text-shadow: 0 0 15px var(--instagram-primary);
 }
-ul li:nth-child(4):hover{
+.icons .github:hover{
   color: var(--github-secondary);
   box-shadow: 0 0 15px var(--github-primary);
   text-shadow: 0 0 15px var(--github-primary);
 }
-ul li:nth-child(5):hover{
+.icons .troylabs:hover{
   color: var(--troylabs-secondary);
   box-shadow: 0 0 15px var(--troylabs-primary);
   text-shadow: 0 0 15px var(--troylabs-primary);
 }
-ul li:nth-child(6):hover{
+.icons .spotify:hover{
   color: var(--spotify-secondary);
   box-shadow: 0 0 15px var(--spotify-primary);
   text-shadow: 0 0 15px var(--spotify-primary);
 }
 
-.fa-envelope-o:hover{
-  color: var(--email-primary);
+nav {
+  position: relative;
+  z-index: 20
 }
-.fa-linkedin:hover{
-  color: var(--linkedin-primary);
+
+img {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  z-index: 10;
 }
-.fa-instagram:hover{
-  color: var(--instagram-primary);
+
+.icons a {
+  position: absolute;
 }
-.fa-github:hover{
-  color: var(--github-primary);
-}
-.fa-rocket:hover{
-  color: var(--troylabs-primary);
-}
-.fa-spotify:hover{
-  color: var(--spotify-primary);
+
+svg {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
 }
